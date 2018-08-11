@@ -1,0 +1,298 @@
+{
+  "marker-15": {
+    "x": 286,
+    "y": 275,
+    "width": 10,
+    "height": 15,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "museum-15": {
+    "x": 226,
+    "y": 275,
+    "width": 15,
+    "height": 15,
+    "pixelRatio": 1,
+    "sdf": false
+  },
+  "zoo-15": {
+    "x": 271,
+    "y": 275,
+    "width": 15,
+    "height": 15,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "building-15": {
+    "x": 211,
+    "y": 275,
+    "width": 15,
+    "height": 15,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "Tiananmen": {
+    "x": 267,
+    "y": 258,
+    "width": 23,
+    "height": 12,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "restaurant-15": {
+    "x": 75,
+    "y": 300,
+    "width": 15,
+    "height": 15,
+    "pixelRatio": 1,
+    "sdf": false
+  },
+  "landscape-15": {
+    "x": 90,
+    "y": 300,
+    "width": 15,
+    "height": 15,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "point-11": {
+    "x": 105,
+    "y": 300,
+    "width": 11,
+    "height": 11,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "bus-15": {
+    "x": 196,
+    "y": 275,
+    "width": 15,
+    "height": 15,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "transfer_15": {
+    "x": 256,
+    "y": 275,
+    "width": 15,
+    "height": 15,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "metro-station-1": {
+    "x": 241,
+    "y": 275,
+    "width": 15,
+    "height": 15,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "circle-brown-11": {
+    "x": 116,
+    "y": 300,
+    "width": 11,
+    "height": 11,
+    "pixelRatio": 1,
+    "sdf": false
+  },
+  "circle-red-11": {
+    "x": 127,
+    "y": 300,
+    "width": 11,
+    "height": 11,
+    "pixelRatio": 1,
+    "sdf": false
+  },
+  "star-11": {
+    "x": 138,
+    "y": 300,
+    "width": 11,
+    "height": 11,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "red": {
+    "x": 148,
+    "y": 275,
+    "width": 24,
+    "height": 24,
+    "pixelRatio": 1,
+    "sdf":false
+  },
+  "green": {
+    "x": 172,
+    "y": 275,
+    "width": 24,
+    "height": 24,
+    "pixelRatio": 1,
+    "sdf":false
+  },
+  "white": {
+    "x": 250,
+    "y": 234,
+    "width": 24,
+    "height": 24,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "tollstation": {
+    "x": 250,
+    "y": 258,
+    "width": 17,
+    "height": 17,
+    "pixelRatio": 1,
+    "sdf": false
+  },
+  "constructionIcon": {
+    "x": 0,
+    "y": 300,
+    "width": 75,
+    "height": 65,
+    "pixelRatio": 1,
+    "sdf": false
+  },
+  "energy": {
+    "x": 175,
+    "y": 200,
+    "width": 75,
+    "height": 75,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "energyLimited": {
+    "x": 100,
+    "y": 0,
+    "width": 100,
+    "height": 100,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "card": {
+    "x": 300,
+    "y": 225,
+    "width": 75,
+    "height": 75,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "cardLimited": {
+    "x": 0,
+    "y": 200,
+    "width": 100,
+    "height": 100,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "carKind": {
+    "x": 300,
+    "y": 150,
+    "width": 75,
+    "height": 75,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "carKindLimited": {
+    "x": 200,
+    "y": 100,
+    "width": 100,
+    "height": 100,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "field": {
+    "x": 300,
+    "y": 0,
+    "width": 75,
+    "height": 75,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "fieldLimited": {
+    "x": 0,
+    "y": 0,
+    "width": 100,
+    "height": 100,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "number": {
+    "x": 100,
+    "y": 200,
+    "width": 75,
+    "height": 75,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "numberLimited": {
+    "x": 200,
+    "y": 0,
+    "width": 100,
+    "height": 100,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "other": {
+    "x": 300,
+    "y": 75,
+    "width": 75,
+    "height": 75,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "otherLimited": {
+    "x": 100,
+    "y": 100,
+    "width": 100,
+    "height": 100,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "tollgateHeightLight": {
+    "x": 0,
+    "y": 100,
+    "width": 100,
+    "height": 100,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "POI_blue": {
+    "x": 275,
+    "y": 200,
+    "width": 25,
+    "height": 34,
+    "pixelRatio": 1,
+    "sdf": true
+  },
+  "POI_red": {
+    "x": 250,
+    "y": 200,
+    "width": 25,
+    "height": 34,
+    "pixelRatio": 1,
+    "sdf": false
+  },
+  "icon_orangedot": {
+    "x": 100,
+    "y": 275,
+    "width": 24,
+    "height": 24,
+    "pixelRatio": 1,
+    "sdf": false
+  },
+  "icon_reddot": {
+    "x": 274,
+    "y": 234,
+    "width": 24,
+    "height": 24,
+    "pixelRatio": 1,
+    "sdf": false
+  },
+  "icon_yellowdot": {
+    "x": 124,
+    "y": 275,
+    "width": 24,
+    "height": 24,
+    "pixelRatio": 1,
+    "sdf": false
+  }
+}
