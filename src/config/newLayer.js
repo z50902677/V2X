@@ -4,7 +4,28 @@ const simple = {
   "name": "Base",
   "sources":
     {
+      "LimitCross": {
+        "data": {
+          type: 'FeatureCollection',
+          features: []
+        },
+        "type": "geojson"
+      },
+      "RouteRecommendSpeed": {
+        "data": {
+          type: 'FeatureCollection',
+          features: []
+        },
+        "type": "geojson"
+      },
       "Svr": {
+        "data": {
+          type: 'FeatureCollection',
+          features: []
+        },
+        "type": "geojson"
+      },
+      "Rsu": {
         "data": {
           type: 'FeatureCollection',
           features: []
@@ -60,12 +81,12 @@ const simple = {
         "type": "vector"
       }
     },
-  "sprite": `${window.location.origin}/static/sprite/sprite`,
+  "sprite": `${window.location.origin + window.location.pathname}static/sprite/sprite`,
   "glyphs": `static/{fontstack}/{range}.pbf`,
   "layers": [
     {
     "id": "2d5182bbb0884cb5adb6f53fc5252a55",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "",
     "layout": { "visibility": "visible" },
     "paint": { "background-color": "#071733" },
@@ -74,7 +95,7 @@ const simple = {
     "type": "background"
   }, {
     "id": "a79d2af665d24687b3b8384c28c7b957",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Waterface",
     "layout": { "visibility": "visible" },
     "source-layer": "Waterface",
@@ -89,7 +110,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 1]]
   }, {
     "id": "c4100872b16940378d64f178630f8763",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Landuse",
     "layout": { "visibility": "visible" },
     "source-layer": "Landuse",
@@ -104,7 +125,7 @@ const simple = {
     "filter": ["all", ["in", "kind", 31, 38]]
   }, {
     "id": "46ae19eb68ca4e11afc70f6fbe8780e0",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Landuse",
     "layout": { "visibility": "visible" },
     "paint": {
@@ -119,7 +140,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 11]]
   }, {
     "id": "2dc8049a60ae4f78a0254f71fd80a931",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Landuse",
     "layout": { "visibility": "visible" },
     "paint": {
@@ -134,7 +155,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 12]]
   }, {
     "id": "253d1ee7d90341d899fec7280a68066c",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Landuse",
     "layout": { "visibility": "visible" },
     "source-layer": "Landuse",
@@ -149,7 +170,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 7]]
   }, {
     "id": "f6f176d9a60f4d93a55e781e5d6be2c4",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Landuse",
     "layout": { "visibility": "visible" },
     "source-layer": "Landuse",
@@ -164,7 +185,7 @@ const simple = {
     "filter": ["all", ["in", "kind", 30, 36, 35, 2]]
   }, {
     "id": "8e3ca0d6df7c437bbaea8eccd50d59f3",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Landuse",
     "layout": { "visibility": "visible" },
     "paint": {
@@ -179,7 +200,7 @@ const simple = {
     "filter": ["all", ["in", "kind", 32, 34, 33, 39]]
   }, {
     "id": "1be44b7af68b470c8286bfd6b7609b09",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Landuse",
     "layout": { "visibility": "visible" },
     "paint": {
@@ -194,7 +215,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 3]]
   }, {
     "id": "2d933f91af4e49119a69809ae32a8964",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Landuse",
     "layout": { "visibility": "visible" },
     "source-layer": "Landuse",
@@ -209,7 +230,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 1]]
   }, {
     "id": "70da6cd4884049a4ae14b55d8c633de3",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Landuse",
     "layout": { "visibility": "visible" },
     "source-layer": "Landuse",
@@ -225,7 +246,7 @@ const simple = {
     "filter": ["all", ["in", "kind", 6, 40]]
   }, {
     "id": "981d0dec1a4f4f3dbb7b8374cdc5d832",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Greenface",
     "layout": { "visibility": "visible" },
     "paint": {
@@ -300,7 +321,7 @@ const simple = {
     "filter": ["all", ["in", "kind", "7", "9", "6", "8"], [">=", "area_level", 98]]
   }, {
     "id": "24e7304c8f764941aba479b3232c3e8b",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Greenface",
     "layout": { "visibility": "visible" },
     "paint": {
@@ -330,7 +351,7 @@ const simple = {
     "filter": ["all", [">=", "area_level", 75], ["==", "kind", "1"]]
   }, {
     "id": "e15fb8e9061047e9b5182a3b12b0ef4a",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Waterface",
     "layout": { "visibility": "visible" },
     "source-layer": "Waterface",
@@ -345,7 +366,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 5], ["==", "display_class", 8]]
   }, {
     "id": "37a0e81ad2a64188b976268d011c5a69",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Waterface",
     "layout": { "visibility": "visible" },
     "source-layer": "Waterface",
@@ -555,7 +576,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 2], ["!in", "display_class", -2, -1, 1]]
   }, {
     "id": "8fca8b07cb6d44139acc61de68a75bd8",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Waterface",
     "layout": { "visibility": "visible" },
     "source-layer": "Waterface",
@@ -720,7 +741,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 3], ["!in", "display_class", -2, -1, 1], [">=", "area_level", 10]]
   }, {
     "id": "af6ee2f294f04e1abb99423413e40b18",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Waterface",
     "layout": { "visibility": "visible" },
     "source-layer": "Waterface",
@@ -735,7 +756,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 3], ["!in", "display_class", -2, -1]]
   }, {
     "id": "a44f5507967740de9f5c4856c8ec69b6",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Railway",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "round" },
     "source-layer": "Railway",
@@ -748,7 +769,7 @@ const simple = {
     "type": "line"
   }, {
     "id": "36a5752c2166447f958addc7144532b0",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Railway",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "paint": {
@@ -821,7 +842,7 @@ const simple = {
     "filter": ["all", ["in", "kind", 3, 1]]
   }, {
     "id": "f1c66c86b40c4f79b8fed4effb59505e",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "round" },
     "source-layer": "Road",
@@ -1510,7 +1531,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 1]]
   }, {
     "id": "283de6d31714440b8717bef76c73b0e7",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "round" },
     "source-layer": "Road",
@@ -1525,7 +1546,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 10], ["!=", "const_st", 3]]
   }, {
     "id": "cff236b11bf4448e957b7cbe8a8a596f",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "paint": {
@@ -1546,7 +1567,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 8], ["!=", "const_st", 3]]
   }, {
     "id": "9feab7ed20d445269d1d9be282ca575a",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "source-layer": "Road",
@@ -1567,7 +1588,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 9], ["!=", "const_st", 3]]
   }, {
     "id": "fa0c7024d0ea4c0f97ad91ad3ce3feab",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "paint": {
@@ -1588,7 +1609,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 7], ["!=", "const_st", 3]]
   }, {
     "id": "0f35740c7b694c9ea31822c763a19a31",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "paint": {
@@ -1609,7 +1630,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 6], ["!=", "const_st", 3]]
   }, {
     "id": "0e58472d03fd4c85baf5fa5544fcbe9b",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "source-layer": "Road",
@@ -1630,7 +1651,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 4], ["!=", "const_st", 3]]
   }, {
     "id": "b5463ca41e864eab9e5d6ce9388ea16d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "source-layer": "Road",
@@ -1651,7 +1672,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 4], ["!=", "const_st", 3]]
   }, {
     "id": "edd1cb7a351546e0bdee6b4b1396c737",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "paint": {
@@ -1672,7 +1693,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 3], ["!=", "const_st", 3]]
   }, {
     "id": "234c5df38b3248c2b74338422eac1ff5",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "paint": {
@@ -1693,7 +1714,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 3], ["!=", "const_st", 3]]
   }, {
     "id": "3719114e11e94a1e8f5820f0ade74b2c",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "round" },
     "paint": {
@@ -1707,7 +1728,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 10], ["!=", "const_st", 3]]
   }, {
     "id": "00a34c25827b4e58a0f2991b96f58d19",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "source-layer": "Road",
@@ -1724,7 +1745,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 8], ["!=", "const_st", 3]]
   }, {
     "id": "da23a3f43d48447fbed102275288b1cb",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "paint": {
@@ -1741,7 +1762,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 9], ["!=", "const_st", 3]]
   }, {
     "id": "9ee33adb51124328a61b83af11b7ef64",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "source-layer": "Road",
@@ -1758,7 +1779,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 7], ["!=", "const_st", 3]]
   }, {
     "id": "4ea2f32f8d8240129b0e133656c674bf",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "paint": {
@@ -1775,7 +1796,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 6], ["!=", "const_st", 3]]
   }, {
     "id": "e4c0562e55324b46982bbc841408d8f4",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "round" },
     "source-layer": "Road",
@@ -1792,7 +1813,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 4], ["!=", "const_st", 3]]
   }, {
     "id": "4732a77390fb4cadb6b2e64af093e7d2",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "round" },
     "paint": {
@@ -1809,7 +1830,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 4], ["!=", "const_st", 3]]
   }, {
     "id": "afb0e846c4f643d5bb5b7ce4b7b1289d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "round" },
     "paint": {
@@ -1826,7 +1847,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 3], ["!=", "const_st", 3]]
   }, {
     "id": "e5330d7cb9844966a63c1d1133aad8c6",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "round" },
     "paint": {
@@ -1843,7 +1864,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 3], ["!=", "const_st", 3]]
   }, {
     "id": "c5508c3c991146b59c84b61651cd020d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "paint": {
@@ -1864,7 +1885,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 2]]
   }, {
     "id": "728790b889e54d94b11fe65357b53144",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "source-layer": "Road",
@@ -1885,7 +1906,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 2]]
   }, {
     "id": "c3312248c73849cb9693f1709de736b5",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "round" },
     "paint": {
@@ -1902,7 +1923,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 2]]
   }, {
     "id": "8da1606a12274e5098439c6629d9cc71",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "round" },
     "source-layer": "Road",
@@ -1919,7 +1940,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 2]]
   }, {
     "id": "cd76b781ac994d3a840a298aab54f07a",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "source-layer": "Road",
@@ -1940,7 +1961,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 1]]
   }, {
     "id": "e49ae54ca623477bb3f951c63053a908",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "paint": {
@@ -1961,7 +1982,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 1]]
   }, {
     "id": "ce17deb082ba403e8157a7db37d86879",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "round" },
     "paint": {
@@ -1978,7 +1999,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 1]]
   }, {
     "id": "cded377bb22a4c69a3c9a86b8b115b26",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "round" },
     "source-layer": "Road",
@@ -1995,7 +2016,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 1]]
   }, {
     "id": "590969b7dedd44588ec204262058798d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "source-layer": "Road",
@@ -2017,7 +2038,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 8], ["==", "const_st", 1]]
   }, {
     "id": "b75bc980b5054d9e897ee6592726160e",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "none", "line-cap": "butt" },
     "source-layer": "Road",
@@ -2031,7 +2052,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 8], ["==", "const_st", 1]]
   }, {
     "id": "c6131ca7c2f347d2872c0b1b87c1ea9c",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "paint": {
@@ -2053,7 +2074,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 7], ["!=", "const_st", 3]]
   }, {
     "id": "202a470ce4734aa5898a776a622bffc9",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "none", "line-cap": "butt" },
     "source-layer": "Road",
@@ -2067,7 +2088,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 7], ["!=", "const_st", 3]]
   }, {
     "id": "aa458bc29d044d048c343fe06e25fc3c",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "source-layer": "Road",
@@ -2089,7 +2110,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 6], ["!=", "const_st", 3]]
   }, {
     "id": "eef9647da1bc40189a4d51ab816cda71",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "none", "line-cap": "butt" },
     "paint": {
@@ -2103,7 +2124,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 6], ["!=", "const_st", 3]]
   }, {
     "id": "3eb671de426b45afab7a6775b2b8e16e",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "paint": {
@@ -2122,7 +2143,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 4], ["==", "const_st", 1]]
   }, {
     "id": "b79a33d32b554f98bec7231b0d0dd7ad",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "none", "line-cap": "butt" },
     "paint": {
@@ -2136,7 +2157,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 4], ["!=", "const_st", 3]]
   }, {
     "id": "e10ce3e7737e4b2dae55775843d61347",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "paint": {
@@ -2155,7 +2176,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 3], ["==", "const_st", 1]]
   }, {
     "id": "3fe08851eb9e441db96af489765dcf9b",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "none", "line-cap": "butt" },
     "paint": {
@@ -2169,7 +2190,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 3], ["!=", "const_st", 3]]
   }, {
     "id": "b8a3e91f01a749c082bf178f55b13886",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "source-layer": "Road",
@@ -2188,7 +2209,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 2]]
   }, {
     "id": "cd7b14d9464243cc8c64593208d36881",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "none", "line-cap": "butt" },
     "source-layer": "Road",
@@ -2203,7 +2224,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 2]]
   }, {
     "id": "9520d64f8c014be597513c2deb66dbe2",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "visible", "line-cap": "butt" },
     "source-layer": "Road",
@@ -2225,7 +2246,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 1]]
   }, {
     "id": "d26c8bd9995d4e488a5cf73a1124bee2",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": { "line-join": "round", "visibility": "none", "line-cap": "butt" },
     "source-layer": "Road",
@@ -2248,7 +2269,7 @@ const simple = {
     "type": "fill"
   }, {
     "id": "3e70be2d5cd74f21ba8768c81ea69879",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Buildingmore",
     "layout": { "visibility": "visible" },
     "paint": {
@@ -2260,11 +2281,11 @@ const simple = {
       "fill-extrusion-height": { "property": "levels", "type": "identity" }
     },
     "source-layer": "Buildingmore",
-    "minzoom": 16.0,
+    "minzoom": 14.0,
     "type": "fill-extrusion"
   }, {
     "id": "f76728d329e945828bda8ea23cf72aad",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": {
       "text-size": {
@@ -2290,7 +2311,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 10], ["!=", "const_st", 3]]
   }, {
     "id": "d7a7d7a6acab4395807a84bf48af7acd",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": {
       "text-size": {
@@ -2315,7 +2336,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 9], ["!=", "const_st", 3]]
   }, {
     "id": "b02926a6933c45a5ac124d4fdbbc0696",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": {
       "text-size": {
@@ -2340,7 +2361,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 8], ["==", "const_st", 1], ["!=", "form", "12"]]
   }, {
     "id": "d2b4cc81c3ca4e8284f19c6887122c36",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": {
       "text-size": {
@@ -2367,7 +2388,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 7], ["!=", "const_st", 3]]
   }, {
     "id": "69f12dd434554b9c80ca72b669a26eac",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": {
       "text-size": {
@@ -2393,7 +2414,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 6], ["!=", "const_st", 3]]
   }, {
     "id": "2045a54927e54f659e6ed79d38e66259",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Railway",
     "layout": {
       "text-size": {
@@ -2418,7 +2439,7 @@ const simple = {
     "type": "symbol"
   }, {
     "id": "ac20054a4ca04a88904402f8df3aaf51",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": {
       "text-size": 11,
@@ -2440,7 +2461,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 13], ["!=", "const_st", 3]]
   }, {
     "id": "4e8cdca39b8c4faeb07c7e6312093d6e",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": {
       "text-size": 9.0,
@@ -2467,7 +2488,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 6]]
   }, {
     "id": "67374f75b36e4b1cbb9bac594b472ee9",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": {
       "text-size": 9.0,
@@ -2494,7 +2515,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 4]]
   }, {
     "id": "7bafb845700c41cab11c97ddf12ea33b",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11,
@@ -2524,7 +2545,7 @@ const simple = {
     "filter": ["all", ["==", "accessflag", 0], ["in", "kindcode", "150101", "150102"]]
   }, {
     "id": "63ed5729bc2e48b5ab3e663116b75998",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2554,7 +2575,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "150101"], ["==", "accessflag", 0]]
   }, {
     "id": "ec0b17fd6eb74b2c89f472d77f148522",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2584,7 +2605,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "150103", "150104"], ["==", "accessflag", 0]]
   }, {
     "id": "a48757d6716b484ab4b48bef5e6dfbbc",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2614,7 +2635,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "230130", "230219", "230220", "230221", "230228", "230229"], ["==", "accessflag", 0]]
   }, {
     "id": "62357f75a04a4ccdb9b47ebbf1dd78aa",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2644,7 +2665,7 @@ const simple = {
     "filter": ["all", ["==", "accessflag", 0], ["==", "kindcode", "210105"]]
   }, {
     "id": "13600185014e40168b96cf296f48b9dc",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2674,7 +2695,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "210101", "210102", "210103", "210104", "210201", "210202", "210203", "210204", "210206", "210207", "210209", "210210", "210213", "210214", "210216", "210217", "210218", "210219", "210301", "210302", "210303", "210400"], ["==", "accessflag", 0]]
   }, {
     "id": "a7a3eafe5152480faf2a57d1c6982ccb",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2704,7 +2725,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "200200", "200300", "200400", "200404", "200405"], ["==", "accessflag", 0]]
   }, {
     "id": "c9f180d92516401a9fc9b07fe50234ac",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2734,7 +2755,7 @@ const simple = {
     "filter": ["all", ["==", "accessflag", 0], ["==", "kindcode", "190204"]]
   }, {
     "id": "01368abf3385497495d1450881952a1d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2764,7 +2785,7 @@ const simple = {
     "filter": ["all", ["==", "accessflag", 0], ["in", "kindcode", "190500", "190501"]]
   }, {
     "id": "364d9e58041a42aeb25bbb770b902097",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2794,7 +2815,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "190111", "190112", "190113", "190114", "190301", "190502"], ["==", "accessflag", 0]]
   }, {
     "id": "dd6536887a3041d5ace774a17c4a235b",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2824,7 +2845,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "180209", "180210", "180211"], ["==", "accessflag", 0]]
   }, {
     "id": "11c4464cc31242d18caef402c9955106",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2854,7 +2875,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "180206", "180207", "180208", "180301", "180302", "180303"], ["==", "accessflag", 0]]
   }, {
     "id": "5c0416d17ae449a5b076191f33328322",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2884,7 +2905,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "180201", "180202", "180203", "180204", "180205"], ["==", "accessflag", 0]]
   }, {
     "id": "6643232cde69458aad5e9d6bcce7c9b0",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2914,7 +2935,7 @@ const simple = {
     "filter": ["all", ["==", "accessflag", 0], ["==", "kindcode", "170107"]]
   }, {
     "id": "910ce16d31fc4e2fa0777d798d787d78",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2944,7 +2965,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "170106", "170108", "170109", "170110", "170201"], ["==", "accessflag", 0]]
   }, {
     "id": "fc25ab6a1bba4f23a5a5d0a141a36561",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -2974,7 +2995,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "160201", "160202"], ["==", "accessflag", 0]]
   }, {
     "id": "7937dfb7b1864956a294618ab9ac454d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3004,7 +3025,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "160108", "160110", "160209"], ["==", "accessflag", 0]]
   }, {
     "id": "18b61e0c5bca4141b08bbce4215914dd",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3034,7 +3055,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "140202"], ["==", "accessflag", 0]]
   }, {
     "id": "ec84bf97a7b74b8e987a764151686169",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3065,7 +3086,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "130101", "130200", "130201", "130202", "130303", "130304", "130501", "130502"], ["==", "accessflag", 0]]
   }, {
     "id": "7cf35495ac5b4cba9c504b65819525ef",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3095,7 +3116,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "130104", "130105", "130203", "130204", "130205", "130206", "130207", "130302", "130401", "130403", "130404", "130405", "130406", "130407", "130408", "130409", "130410", "130411", "130800", "130801", "130803", "130804", "130805", "130806", "130807"], ["==", "accessflag", 0]]
   }, {
     "id": "9f135170a5914261855b274af41f9013",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": { "stops": [[11, 12], [18, 20]], "base": 1 },
@@ -3123,7 +3144,7 @@ const simple = {
     "filter": ["all", ["==", "accessflag", 0], ["in", "kindcode", "230201", "230202"]]
   }, {
     "id": "d64bfc4f89834533a7f5a93b8e62fae1",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11,
@@ -3151,7 +3172,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "230211", "230212", "230214", "230223", "230224", "230225", "230213"], ["==", "accessflag", 0]]
   }, {
     "id": "ce7bb0b354fc48daa3b73b65d2c45538",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11,
@@ -3179,7 +3200,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "230203", "230204", "230230"], ["==", "accessflag", 0]]
   }, {
     "id": "25beb17c861445a2a06ab5fa23b5ca18",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3209,7 +3230,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "220200"], ["==", "accessflag", 0]]
   }, {
     "id": "e401063617984f02ae080a94ba004df0",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3239,7 +3260,7 @@ const simple = {
     "filter": ["all", ["==", "accessflag", 0], ["==", "kindcode", "200103"]]
   }, {
     "id": "9ed793771fac463ca59bf2dc75711ad4",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3269,7 +3290,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180304"], ["==", "accessflag", 0]]
   }, {
     "id": "3dc39621020b48ada64143efa975b98d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3299,7 +3320,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "180100", "180101", "180102", "180103", "180104", "180105", "180106", "180306", "180400"], ["==", "accessflag", 0], ["!=", "name_zh", "澳門總督府"]]
   }, {
     "id": "3629af972c7649b29e105c0a5f694d8d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3330,7 +3351,7 @@ const simple = {
     "filter": ["all", ["==", "accessflag", 0], ["in", "kindcode", "180107", "180110"]]
   }, {
     "id": "d9ec8748a47e4c51a2a166a137b56114",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3360,7 +3381,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "170103", "170104"], ["==", "accessflag", 0]]
   }, {
     "id": "aea7ccacd60c4965b795dc204dd34dba",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3390,7 +3411,7 @@ const simple = {
     "filter": ["all", ["==", "accessflag", 0], ["==", "kindcode", "170105"]]
   }, {
     "id": "b991c79f4b47400aa8161d476fec4b9c",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3420,7 +3441,7 @@ const simple = {
     "filter": ["all", ["==", "accessflag", 0], ["==", "kindcode", "160103"]]
   }, {
     "id": "5f08e31ce9c84d31b6e1b87159fe0a89",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3450,7 +3471,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "160100", "160207", "160208"], ["==", "accessflag", 0]]
   }, {
     "id": "e0422a1c12064a428f8d0486b728cbd2",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3481,7 +3502,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "160101", "160102", "160104", "160204", "160205", "160206"], ["==", "accessflag", 0]]
   }, {
     "id": "25edcd6e05a2492f92c7147891e40802",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3511,7 +3532,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "150200"], ["==", "accessflag", 0]]
   }, {
     "id": "65c57973b4004ed3b026802acf326b3a",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3542,7 +3563,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "130102", "130106", "130301"], ["==", "accessflag", 0]]
   }, {
     "id": "cb2d1a22b9d44827848cf35255af50e2",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3572,7 +3593,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "130402", "130601", "130602", "130603", "130700", "130701", "130702", "130703", "130704", "130705"], ["==", "accessflag", 0]]
   }, {
     "id": "46ebd17c49c047e69e8cfd750cbec444",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3602,7 +3623,7 @@ const simple = {
     "filter": ["all", ["==", "accessflag", 0], ["==", "kindcode", "120104"]]
   }, {
     "id": "1ec6fc7ef2e44739827261ca191c078e",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "icon-image": "point-11",
@@ -3634,7 +3655,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "220100", "220400"], ["==", "accessflag", 0]]
   }, {
     "id": "e5444a8f6f5d44a2b2dc97f24cebe381",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3665,7 +3686,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "240100"], ["==", "accessflag", 0]]
   }, {
     "id": "25f44734567b4baaa164651e1a1b5ca5",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3696,7 +3717,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "110101", "110102", "110103", "110200", "110301", "110302", "110303", "110304"], ["==", "accessflag", 0]]
   }, {
     "id": "770a01d7586944588055f35d08fca20a",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3726,7 +3747,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "120101", "120102", "120103", "120201"], ["==", "accessflag", 0]]
   }, {
     "id": "35adaf9d3ca7462a9d7644d78fb202c6",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3756,7 +3777,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "120201"], ["==", "generation", 2], ["==", "accessflag", 0]]
   }, {
     "id": "c9b85eab052d41c7963cb8a530dba293",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "icon-image": "poi_door_16",
@@ -3772,7 +3793,7 @@ const simple = {
     "filter": ["all", ["in", "accessflag", 2, 1]]
   }, {
     "id": "f8fa7f52707848fd8f4ad4d4c5565bf1",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3803,7 +3824,7 @@ const simple = {
     "filter": ["all", ["==", "accessflag", 0], ["==", "kindcode", "190400"]]
   }, {
     "id": "9a8fb03d607142f3b00d01ae53ce9f87",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3834,7 +3855,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "190401", "190402", "190403", "190404"], ["==", "accessflag", 0]]
   }, {
     "id": "287a3e7e462645c5b1c833b0c8285293",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3865,7 +3886,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "190200", "190201"], ["==", "accessflag", 0]]
   }, {
     "id": "71b7b91055ce4e8ba61fe085f3032633",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3896,7 +3917,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180309"], ["==", "accessflag", 0]]
   }, {
     "id": "5d112ce4869b4326bdb9abd35d6a1cb3",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3928,7 +3949,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "180307", "180308"], ["==", "accessflag", 0]]
   }, {
     "id": "2103fd66a1c649c39d730bfdf82e807d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3959,7 +3980,7 @@ const simple = {
     "filter": ["all", ["==", "accessflag", 0], ["==", "kindcode", "180305"]]
   }, {
     "id": "b7cf3a85a9094e9082b9fe35eb7b95ac",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -3990,7 +4011,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "170100", "170101", "170102"], ["==", "accessflag", 0]]
   }, {
     "id": "a37a985dc997471a86daf65d8cc57ea5",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11,
@@ -4015,7 +4036,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "210215"], ["==", "accessflag", 0]]
   }, {
     "id": "f2aa757ebedd40b6b4a013b680f35025",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4046,7 +4067,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "200102", "200201"], ["==", "accessflag", 0]]
   }, {
     "id": "a805b657dbec40fc8fd52745e562554e",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4077,7 +4098,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "160105", "160203", "160106", "160107"], ["==", "accessflag", 0]]
   }, {
     "id": "89fa8b69c52d46388d18670b0f49add5",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4108,7 +4129,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "", "160109"], ["==", "accessflag", 0]]
   }, {
     "id": "edc01570e5204d2e994013b1cbb269c7",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4139,7 +4160,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "140101", "140104", "140201", "140301", "140302", "140303", "140304"], ["==", "accessflag", 0]]
   }, {
     "id": "4c4d7bcd0016489197f00be5035a79f0",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4170,7 +4191,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "210211", "210304"], ["==", "accessflag", 0]]
   }, {
     "id": "b60e88226c9040adba778d0a73b1d702",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4201,7 +4222,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "230125", "230206", "230207"], ["==", "accessflag", 0]]
   }, {
     "id": "1347a47a79bf4b36b0ca405fcbd38570",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4232,7 +4253,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "230127", "230128", "230129", ""], ["==", "accessflag", 0]]
   }, {
     "id": "18eb5417c78b45efb77bc3cf97b97d6f",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4263,7 +4284,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "230126"], ["==", "generation", 2], ["==", "accessflag", 0]]
   }, {
     "id": "57a25c7269be49f195058f1f192457c4",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4294,7 +4315,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "220300"], ["==", "accessflag", 0]]
   }, {
     "id": "95d788408ca641d28709e79752d0e94d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4325,7 +4346,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "190100", "190101", "190103", "190104", "190105", "190106"], ["==", "accessflag", 0]]
   }, {
     "id": "6143e7813b894923bdf682161285b04d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4356,7 +4377,7 @@ const simple = {
     "filter": ["all", ["==", "accessflag", 0], ["==", "kindcode", "190110"]]
   }, {
     "id": "ec7fd712e0b841098a3f883d7494a751",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4387,7 +4408,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "190102"], ["==", "accessflag", 0]]
   }, {
     "id": "25f7471512604db2b27c3704052b878c",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4418,7 +4439,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180109"], ["==", "accessflag", 0]]
   }, {
     "id": "095551b5f06a46fb9c5b3222ce5af117",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4449,7 +4470,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "200105"], ["==", "accessflag", 0]]
   }, {
     "id": "3c3ee448831044dd81799f12983c15c6",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4480,7 +4501,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "250100", "250200"], ["==", "accessflag", 0]]
   }, {
     "id": "ffc91e37abf14478aef8ec2cab6d3545",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4511,7 +4532,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "120201"], ["==", "accessflag", 0]]
   }, {
     "id": "ed5ef49a6b2f4151a3a3bd455067127e",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4542,7 +4563,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "230100", "230108", "230226"], ["==", "accessflag", 0]]
   }, {
     "id": "cee0707c95b744a9ae275eb32cf3635f",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4573,7 +4594,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180310"], ["==", "accessflag", 0]]
   }, {
     "id": "e585c656a61b44ee8d65534046b928a3",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4604,7 +4625,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "190107", "190108"], ["==", "accessflag", 0]]
   }, {
     "id": "e22cb18196b4477e9c462f2ad6ca61c1",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4635,7 +4656,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "230126"], ["==", "generation", 1], ["==", "accessflag", 0]]
   }, {
     "id": "239ce74f3dec4299a35755086bd8032a",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "text-size": 11.0,
@@ -4666,7 +4687,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "260000", "260100"], ["==", "accessflag", 0]]
   }, {
     "id": "c0d72901ea5f47f7b0b18052ba269e0a",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -4697,7 +4718,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "130705"]]
   }, {
     "id": "114aaba4001143838047d1afd2cfec64",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -4728,7 +4749,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "130104"]]
   }, {
     "id": "83f85aeda27e422aa099182ef1b97027",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -4759,7 +4780,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "130103"]]
   }, {
     "id": "1904645ee18b4aed8098463b838824a9",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -4790,7 +4811,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "135036"]]
   }, {
     "id": "5aa8f21387df41f4a7247b6cbbd6343a",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -4821,7 +4842,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "210217"]]
   }, {
     "id": "6db8c519267a435cae05974f1c391854",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180101_16",
@@ -4854,7 +4875,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180102"]]
   }, {
     "id": "302ef4098ae3448eb4bc91ea9867f36f",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180101_16",
@@ -4887,7 +4908,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180101"]]
   }, {
     "id": "f293fa15d9574ce6970f899fac7d4f38",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -4918,7 +4939,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "190403"]]
   }, {
     "id": "57ce9024c73548bfa9f2e327632d0fd8",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -4949,7 +4970,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "190402"]]
   }, {
     "id": "3f8e2a4a84b543e384b65ff82ed00b09",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -4980,7 +5001,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "190404"]]
   }, {
     "id": "c8f4cae9c968498b99463c04078f4668",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5011,7 +5032,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160101"]]
   }, {
     "id": "be0ee5627ef04283b9d6bf6fdb9d5538",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5042,7 +5063,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "170106"]]
   }, {
     "id": "ab42e3e471334e61aedd7122c9852bb4",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5073,7 +5094,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "220400", "165026"]]
   }, {
     "id": "90f3d7c3e1c24e3a9be9869bd3bf8291",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5104,7 +5125,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "130702"]]
   }, {
     "id": "ec7328894ad24bdca07f1891e28d202d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5135,7 +5156,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "130101"]]
   }, {
     "id": "92e6e6cd22064b73a2bb965d86edf0f2",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5166,7 +5187,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "215201"]]
   }, {
     "id": "fcbddea3ffda4a93a9329a130660e947",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5196,7 +5217,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "275015"]]
   }, {
     "id": "e18864643af54b18b57ba570f7d1ddfb",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180310_16",
@@ -5228,7 +5249,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180310"]]
   }, {
     "id": "de89f19f03df4a419b5cddac6c3c02fa",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180100_16",
@@ -5261,7 +5282,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "185122"], ["<=", "rank", 3]]
   }, {
     "id": "0ed0a35058da4786825f8d4089bdf3be",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5292,7 +5313,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160206"]]
   }, {
     "id": "5e04564325344de989f2347514e68253",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5323,7 +5344,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160204"]]
   }, {
     "id": "fde5d50cf38e46cd8e8ee59106392c67",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5354,7 +5375,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160201"]]
   }, {
     "id": "57318029f4854599a8f747d2431dbaaf",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5386,7 +5407,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "165028"]]
   }, {
     "id": "8d7887cd952549d88fc139450ee2df7d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5417,7 +5438,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "170102"]]
   }, {
     "id": "71313d4d6a9640d89e6a79cefec7a673",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5448,7 +5469,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "175115"]]
   }, {
     "id": "b12f33dedb6048d0871cd033b90ed192",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5479,7 +5500,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "160100", "220200", "225018", "215033", "215031", "275016", ""]]
   }, {
     "id": "ee3ae0b163434437be795b62b002d485",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_160102_16",
@@ -5511,7 +5532,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "160104", ""]]
   }, {
     "id": "2756a727a4b84dd3841dbf0ecdcfe130",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5542,7 +5563,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "120102"]]
   }, {
     "id": "5dfb3b65dd584632a950ec8fbec9a5e1",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5573,7 +5594,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "120104"]]
   }, {
     "id": "2daaacde224443938b3641ed2549d878",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5604,7 +5625,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "185123", "180301"]]
   }, {
     "id": "ca5e9227952844d1b56fb3e5f31b9ce2",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11.0,
@@ -5635,7 +5656,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180302"]]
   }, {
     "id": "1167acacd80a472fa28b27de335c4eb4",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5666,7 +5687,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "120103"]]
   }, {
     "id": "d75bfd5828f04fd892396b723f26ef87",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5697,7 +5718,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "130704"]]
   }, {
     "id": "ac4bb83b6fab470b9e4af532615e86c2",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5728,7 +5749,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "130703"]]
   }, {
     "id": "504fdeb43f2e4ddea0fda420638ba289",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5759,7 +5780,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "130700"]]
   }, {
     "id": "801dafd49c0e4f86ade65c69442d22c5",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5790,7 +5811,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "130202"]]
   }, {
     "id": "b27e963fa25e4a0994244678c3c6ff03",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5821,7 +5842,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "275016"]]
   }, {
     "id": "958d28814b2841a7a6bc7d2d36d76e16",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5852,7 +5873,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "215035", "215204", "215205", "215206", "215207"]]
   }, {
     "id": "cfb4ed30bff54a17a3e05506a72bb54e",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5883,7 +5904,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "120202"]]
   }, {
     "id": "47219fcdfa5240ac9971c01179d54a70",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5914,7 +5935,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180309"], ["<=", "rank", 3]]
   }, {
     "id": "066b775757e44be88d39c8c7f0a0b06f",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "point-11",
@@ -5946,7 +5967,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "275009"], ["<=", "rank", 3]]
   }, {
     "id": "e999314ec5084c058a93680d39f710a7",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -5977,7 +5998,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180306"]]
   }, {
     "id": "943811617525428e8d17bf7bed864ebc",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "icon-image": "poi_code_230207_16",
@@ -5992,7 +6013,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "230207"]]
   }, {
     "id": "340a837df80e4051852e47624e2337bd",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Poi",
     "layout": {
       "icon-image": "poi_code_230209_34",
@@ -6007,7 +6028,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "230209"]]
   }, {
     "id": "29a13d6072f74965b65623c14f46503f",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6037,7 +6058,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "230103"]]
   }, {
     "id": "ea1d2a6b02044479800ca6d142e2cee2",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6061,7 +6082,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "235021", "235022"], ["<", "rank", 3]]
   }, {
     "id": "f816a38446d743c79b0c7b729c205c1e",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6092,7 +6113,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "195130"]]
   }, {
     "id": "f5e11ab49e094ee1957a20557dcb1682",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180104_16",
@@ -6125,7 +6146,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180104"]]
   }, {
     "id": "fc78afed08d84cd3997d20181eff2a2b",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6156,7 +6177,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "130801"]]
   }, {
     "id": "71885091d3f145fa9ce1c8227c6014e7",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6187,7 +6208,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180210"], ["<=", "rank", 2]]
   }, {
     "id": "bf5d691c46984e0f9dc98c39a15b4e1a",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6218,7 +6239,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160109"]]
   }, {
     "id": "981b50bc1e9e4a6c84d3dbd74e81a1ce",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6249,7 +6270,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "165027"]]
   }, {
     "id": "082ffb56caf7417894f55a3cda6bbfb1",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6280,7 +6301,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160102"]]
   }, {
     "id": "0f353069fc3e49b99f7a132147872c32",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6311,7 +6332,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160103"], ["<=", "rank", 1]]
   }, {
     "id": "f2748eb231e54327aa8fc95afd0bdaa0",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_160105_16",
@@ -6343,7 +6364,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160105"], ["<", "rank", 2]]
   }, {
     "id": "8ffea6aafce242a18539ebb1a965f2b0",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180209_16",
@@ -6375,7 +6396,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "185121"]]
   }, {
     "id": "b798d66b2ce44158b9ebee448012d354",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6406,7 +6427,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "185116"], [">", "rank", 1]]
   }, {
     "id": "2a41f2ac28c1406eadab43f6b3e1802b",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180304_16",
@@ -6438,7 +6459,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "185120"], [">=", "name_zh", ""], ["<", "rank", 2]]
   }, {
     "id": "7008c2b5e4014fe4a79dbdca8c3a1fcb",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6469,7 +6490,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "155030", "155029", "155175", "155176", "155177", "155178", "155179", "155180", "155181", "155182", "155183", "155184", "155185", "155186", "155187", "155188", "155189", "155190", "155191", "155192", "155193", "155194", "155195", "155196", "155197", "155198", "155199", "155200", "155030", "155029"]]
   }, {
     "id": "6a7be717ba164c82ac2a8fee1741af28",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6500,7 +6521,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "220300"]]
   }, {
     "id": "863145270f76480bb1898bceaae69c84",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6531,7 +6552,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "120201"]]
   }, {
     "id": "745d845252954f33a5f7762a7fded3fd",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6562,7 +6583,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "125134", "125136", "125137", "125138"]]
   }, {
     "id": "9782af61e21d426882750d12e22b33a1",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6592,7 +6613,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "235021"]]
   }, {
     "id": "46a10037f2d94fc3b0c168ba9607f93e",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6623,7 +6644,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "195133", "190201", "190202", "190203", "190204"]]
   }, {
     "id": "c787e3e15fce4a4d97e09bdb5e68a31d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6654,7 +6675,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "215032"]]
   }, {
     "id": "43e17433c1fc49d9ad711b287d7539ae",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6685,7 +6706,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "190110"]]
   }, {
     "id": "a7cda1276c1e44a08de28900e2a4d1d8",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6716,7 +6737,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "195129"]]
   }, {
     "id": "5baeeaab5f6642048a62fa044386dad2",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6747,7 +6768,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "190105"]]
   }, {
     "id": "846858e58aa24a1b914af94863810097",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6778,7 +6799,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "190104"]]
   }, {
     "id": "5df36eedb2bb400fae78ffbdac488829",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6809,7 +6830,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "190501"]]
   }, {
     "id": "70ddfbeefbeb4953970e9a42e1fe8ace",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6840,7 +6861,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "195128"]]
   }, {
     "id": "589739bf775c4ef9b34817284b6daa8b",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6870,7 +6891,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "230206"]]
   }, {
     "id": "83d1eec61e034582b126e11f5dca6c7b",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6901,7 +6922,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "130701"]]
   }, {
     "id": "a1627c4ec7384ae5a3fac64688a51f69",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6932,7 +6953,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "200104"]]
   }, {
     "id": "0cd421af93544812bcf927005948fa06",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -6963,7 +6984,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "200104"]]
   }, {
     "id": "71a1413bfac64f23af5d3501dcfd1e40",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180100_16",
@@ -6996,7 +7017,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "185122"], ["<", "rank", 3]]
   }, {
     "id": "dd9104cd52a24dafadf78eef421fe822",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7027,7 +7048,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "195126"], [">=", "rank", 2]]
   }, {
     "id": "34fd1cbb27704ec5b98b44a7d46c109d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180400_16",
@@ -7059,7 +7080,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "185116"], ["<=", "rank", 1]]
   }, {
     "id": "acaaed9c3f564ac2bf0c68164258e11d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7090,7 +7111,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160205"], ["<", "rank", 2]]
   }, {
     "id": "3a04bd75738945f1b76ba04138f6d6c9",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7121,7 +7142,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "195132"]]
   }, {
     "id": "f1e1112dd34c4b10b70e8310df85eea8",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7152,7 +7173,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "200101"]]
   }, {
     "id": "27c7d9b1ec7f4c56b57957a36c28b190",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7183,7 +7204,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "170101"]]
   }, {
     "id": "e65375637c1d4cf2bbd7c6c42e5f74cf",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7214,7 +7235,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160103"], [">", "rank", 1]]
   }, {
     "id": "53944be7edcd43858bde4b521ff64180",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7245,7 +7266,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "125139"]]
   }, {
     "id": "51443717feb143c68b0980d13815adab",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7276,7 +7297,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "125140"]]
   }, {
     "id": "bb0cbfe58c314619ba90629993596562",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7307,7 +7328,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "190102"]]
   }, {
     "id": "09f8c0edf929406cbf96eaed6f3bbe1a",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7338,7 +7359,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "190101"]]
   }, {
     "id": "23c2e15dd927401590b98d80cec6aef0",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180106_16",
@@ -7371,7 +7392,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180106"]]
   }, {
     "id": "f964b6e078f84d43b3da9a3095a15870",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7402,7 +7423,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "275009"], [">=", "rank", 3]]
   }, {
     "id": "2e006a35b47d4078b3b9eb87b374f888",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180304_16",
@@ -7434,7 +7455,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "185120"], ["in", "rank", 2, 3]]
   }, {
     "id": "2be4943b824044238ddedd620684f39b",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7465,7 +7486,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "165024"]]
   }, {
     "id": "a020b3577b8c4487a66a1ce298504efc",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7496,7 +7517,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "185119"]]
   }, {
     "id": "f2743d519dec47b5970a5b6103b07ed7",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7527,7 +7548,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180210"], [">=", "rank", 2]]
   }, {
     "id": "f9d52524b9a44c34aa399196808acdd3",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7558,7 +7579,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160208"]]
   }, {
     "id": "a6acaf3f107a403a90c668295e6c8e8d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7589,7 +7610,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160207"]]
   }, {
     "id": "d695d05cef974b80b4202c1107caa07a",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_160105_16",
@@ -7621,7 +7642,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160105"], ["==", "rank", 2]]
   }, {
     "id": "e7661cc306134da2bd697f8abe53aa39",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7652,7 +7673,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "130102"]]
   }, {
     "id": "96275396339d4640bd4255dabf7f8fd6",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7676,7 +7697,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "235021", "235022"], [">=", "rank", 3]]
   }, {
     "id": "9e3d93d56bae415babeeff9af17c6c22",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7737,7 +7758,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "230103"], [">=", "rank", 1]]
   }, {
     "id": "4df3cf6786c04adca09d52ec074057b4",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7768,7 +7789,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "190109"]]
   }, {
     "id": "be7ab06e8f614bd79d75e0a69cea1cc5",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180105_16",
@@ -7831,7 +7852,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "195126"], [">=", "rank", 2]]
   }, {
     "id": "2f026810d7c8473db7de3784b707e655",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7862,7 +7883,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "200101"], ["in", "rank", 2, 3]]
   }, {
     "id": "03924568890e4adbad74613896832be1",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7893,7 +7914,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160205"], [">=", "rank", 2]]
   }, {
     "id": "b21fa80d33c043ed8c771f8442e04c4f",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7923,7 +7944,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "230126"]]
   }, {
     "id": "1445ea2ba6c64f53a92e8f2927b3e35e",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -7954,7 +7975,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "195125", "190107", "195131"]]
   }, {
     "id": "63441edea90446a19d56bd19eeb47b02",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": { "stops": [[14, 12], [15, 12], [16, 14], [17, 18], [18, 20], [19, 24]], "base": 1 },
@@ -7978,7 +7999,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "230201"], ["<=", "rank", 3]]
   }, {
     "id": "572dfaea11184c6f94c8579fd0bfc64c",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": {
@@ -8005,7 +8026,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "230202"], ["<=", "rank", 4]]
   }, {
     "id": "facf4f144b3a4e2bba4151a396329206",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": { "stops": [[14, 12], [15, 12], [16, 14], [17, 18], [18, 20], [19, 24]], "base": 1 },
@@ -8029,7 +8050,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "230201"], [">=", "rank", 3]]
   }, {
     "id": "4e381961e18f4917be7874919930eb64",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": {
       "text-size": 9.0,
@@ -8056,7 +8077,7 @@ const simple = {
     "filter": ["all", ["in", "kind", 2, 1], ["!=", "const_st", 3]]
   }, {
     "id": "4ec24769eb1b487dbba0af504fd779f0",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": {
       "text-size": {
@@ -8082,7 +8103,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 4], ["==", "const_st", 1]]
   }, {
     "id": "0ccf2d3796694e8292ba2e00ea151d75",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": {
       "text-size": {
@@ -8112,7 +8133,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 3], ["!=", "const_st", 3]]
   }, {
     "id": "ce839aea9ab2437cb4955bcf3b848035",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Villtown",
     "layout": {
       "text-size": {
@@ -8199,7 +8220,7 @@ const simple = {
     "filter": ["all", ["==", "kind", "260000"], ["in", "name_tag", 2, 1], ["!=", "special", 1]]
   }, {
     "id": "9eb0727540a44a7b95003d4cfba0a9bd",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": {
@@ -8226,7 +8247,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "230202"], [">=", "rank", 4]]
   }, {
     "id": "7ec3975fcb9d4da092763b40fbf9a406",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -8257,7 +8278,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180308"]]
   }, {
     "id": "2a4bc3328d044752b91851abca2fdf7d",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11,
@@ -8288,7 +8309,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "180309"], [">=", "rank", 3]]
   }, {
     "id": "d6d27be927034841a9629c03ba2a2a59",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_160105_16",
@@ -8320,7 +8341,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "160105"], [">=", "rank", 3]]
   }, {
     "id": "605a70ef0a234f3cbcf4638585b3044e",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180400_16",
@@ -8352,7 +8373,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "185116"], [">=", "rank", 4]]
   }, {
     "id": "7e1443d9798e40b0a972d4f75b7f267a",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180304_16",
@@ -8384,7 +8405,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "185120"], [">=", "rank", 4]]
   }, {
     "id": "5d10c933eeb04bb6a06a457114abb405",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": {
       "text-size": 9.0,
@@ -8411,7 +8432,7 @@ const simple = {
     "filter": ["all", ["!=", "const_st", 3], ["==", "kind", 3]]
   }, {
     "id": "9c0d2c58f2774a34997b8b515a87821a",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": {
       "text-size": {
@@ -8441,7 +8462,7 @@ const simple = {
     "filter": ["all", ["==", "kind", 2], ["!=", "const_st", 3]]
   }, {
     "id": "a87565ceb7924d5ea7b660784f5a72a5",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Road",
     "layout": {
       "text-size": {
@@ -8499,7 +8520,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "230103"], ["!=", "name_zh", ""], [">=", "rank", 2]]
   }, {
     "id": "628b1e33b7314e5486bc86ebc2f515ab",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "icon-image": "poi_code_180100_16",
@@ -8566,7 +8587,7 @@ const simple = {
     "filter": ["all", ["==", "kindcode", "230126"], [">=", "rank", 4]]
   }, {
     "id": "7a6b3ae98eca4e9f84b5bf667b27261a",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11.0,
@@ -8597,7 +8618,7 @@ const simple = {
     "filter": ["all", ["==", "name_zh", "天安门"]]
   }, {
     "id": "4d9152d80f4a4530b0736dc943cc1318",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": 11.0,
@@ -8672,7 +8693,7 @@ const simple = {
     "filter": ["all", ["in", "kindcode", "275007"], ["!in", "name_zh", "黄尾屿", "赤尾屿", "（台湾省详细资料暂缺）"]]
   }, {
     "id": "5aa1c19175e44298a4940a2461154def",
-    "maxzoom": 17.5,
+    "maxzoom": 19.5,
     "source": "Annotation",
     "layout": {
       "text-size": {
@@ -9114,57 +9135,120 @@ const simple = {
     "type": "symbol",
     "filter": ["all", ["==", "capital", 1]]
   }, {
-      "id": "09b62a9294d544b9943s01cc8ed5d1cd",
-      "maxzoom": 17.5,
+      "id": "09b62a9294d544b9943s01cc8ed5d1cd3387",
+      "maxzoom": 19.5,
       "source": "Svr",
       "layout": {
-        "text-size": 20.0,
-        "icon-size": 1,
+        "icon-size": 0.6,
+        "icon-image": ["case",
+          ["==", ["get", "lightsStatus"], 'caution_Conflicting_Traffic'], "trafficYellowLight",
+          ["==", ["get", "lightsStatus"], 'intersection_clearance'], "trafficYellowLight",
+          ["==", ["get", "lightsStatus"], 'pre_Movement'], "trafficYellowLight",
+          ["==", ["get", "lightsStatus"], 'permissive_Movement_Allowed'], "trafficGreenLight",
+          ["==", ["get", "lightsStatus"], 'protected_Movement_Allowed'], "trafficGreenLight",
+          ["==", ["get", "lightsStatus"], 'stop_Then_Proceed'], "trafficRedLight",
+          ["==", ["get", "lightsStatus"], 'stop_And_Remain'], "trafficRedLight",
+          ["==", ["get", "lightsStatus"], 'dark'], "trafficDisable",
+          ["==", ["get", "lightsStatus"], 'Unavailable'], "trafficDisable",
+          "icon_reddot"],
+        "symbol-avoid-edges": false,
+        "visibility": "visible",
+        "text-size": 14.0,
+        "text-field": ['to-string', ["/", ['to-number', ['get', 'likelyEndTime']], 10]],
+        "text-anchor": "top",
+        "text-offset": [0, -2.4],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-allow-overlap": true,
+        "text-ignore-placement": true
+      },
+      "paint": {
+        "text-color": "#ffffff"
+      },
+      "minzoom": 6.0,
+      "type": "symbol",
+    }, {
+      "id": "09b62a9294d544b9943s01cc8ed5d1cd3387dd",
+      "maxzoom": 19.5,
+      "source": "Rsu",
+      "layout": {
+        "icon-size": 0.6,
         "icon-image": "icon_reddot",
         "symbol-avoid-edges": false,
         "visibility": "visible",
-        "text-field": "{likelyEndTime}",
-        "text-anchor": "left",
-        "text-offset": [1, 0]
+        "text-size": 14.0,
+        "text-field": '{rsuId}',
+        "text-anchor": "top",
+        "text-offset": [0, -1],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true
+      },
+      "paint": {
+        "text-color": "#fbb03b"
       },
       "minzoom": 6.0,
-      "type": "symbol",
-      "filter": ["all", ["in", "lightsStatus", "Dark", "Unavailable", "stop_Then_Proceed", "stop_And_Remain"]]
+      "type": "symbol"
     }, {
-      "id": "09b62a9294d544b9943s01cc8ed5d1cd332",
-      "maxzoom": 17.5,
-      "source": "Svr",
+      "id": "09b62a9294d544b9943s01cc8ed5d1cdfdsa",
+      "maxzoom": 19.5,
+      "source": "LimitCross",
       "layout": {
-        "text-size": 20.0,
-        "icon-size": 1,
-        "icon-image": "icon_orangedot",
+        "icon-size": 0.6,
+        "icon-image": "icon_reddot",
         "symbol-avoid-edges": false,
         "visibility": "visible",
-        "text-field": "{likelyEndTime}",
-        "text-anchor": "left",
-        "text-offset": [1, 0]
+        "text-size": 14.0,
+        "text-field": '{desc}',
+        "text-anchor": "center",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-allow-overlap": true,
+        "text-ignore-placement": true
+      },
+      "paint": {
+        "text-color": "#ffffff"
       },
       "minzoom": 6.0,
       "type": "symbol",
-      "filter": ["all", ["in", "lightsStatus", "pre_Movement", "permissive_Movement_Allowed", "protected_Movement_Allowed"]]
     }, {
-      "id": "09b62a9294d544b9943s01cc8ed5d1cd3387",
-      "maxzoom": 17.5,
-      "source": "Svr",
+      "id": "09b62a9294d544b9943s01cc8ed5detii",
+      "maxzoom": 19.5,
+      "source": "RouteRecommendSpeed",
       "layout": {
-        "text-size": 20.0,
-        "icon-size": 1,
-        "icon-image": "icon_yellowdot",
+        "icon-size": 0.6,
+        "icon-image": "icon_reddot",
         "symbol-avoid-edges": false,
         "visibility": "visible",
-        "text-field": "{likelyEndTime}",
-        "text-anchor": "left",
-        "text-offset": [1, 0]
+        "text-size": 14.0,
+        "text-field": '{rcmSpeed}',
+        "text-anchor": "center",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-allow-overlap": true,
+        "text-ignore-placement": true
+      },
+      "paint": {
+        "text-color": "#ffffff"
       },
       "minzoom": 6.0,
       "type": "symbol",
-      "filter": ["all", ["in", "lightsStatus", "intersection_Clearance", "caution_Conflicting_Traffic"]]
-    }]
+    }
+    // {
+    //   "id": "09b62a9294d544b9943s01cc8ed5d1cd3387dd",
+    //   "maxzoom": 19.5,
+    //   "source": "Rsu",
+    //   'paint': {
+    //     // make circles larger as the user zooms from z12 to z22
+    //     'circle-radius': {
+    //       'base': 1.75,
+    //       'stops': [[12, 5], [22, 10]]
+    //     },
+    //     'circle-color': '#fbb03b'
+    //   },
+    //   "minzoom": 6.0,
+    //   "type": "circle",
+    // }
+    ]
 };
 
 export default simple;
